@@ -1,0 +1,80 @@
+[gd_scene load_steps=7 format=2]
+
+[ext_resource path="res://Scripts/returnToMainMenu.gd" type="Script" id=1]
+[ext_resource path="res://title_screen/SupermercadoOne-Regular.ttf" type="DynamicFontData" id=2]
+
+[sub_resource type="DynamicFont" id=6]
+size = 50
+font_data = ExtResource( 2 )
+
+[sub_resource type="DynamicFont" id=4]
+size = 30
+font_data = ExtResource( 2 )
+
+[sub_resource type="DynamicFont" id=7]
+size = 30
+font_data = ExtResource( 2 )
+
+[sub_resource type="DynamicFont" id=2]
+size = 30
+font_data = ExtResource( 2 )
+
+[node name="World" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="CenterContainer" type="CenterContainer" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 1.0
+margin_right = 1.0
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="VBoxContainer" type="VBoxContainer" parent="CenterContainer"]
+margin_left = 366.0
+margin_top = 210.0
+margin_right = 913.0
+margin_bottom = 519.0
+
+[node name="Label" type="Label" parent="CenterContainer/VBoxContainer"]
+margin_right = 547.0
+margin_bottom = 60.0
+custom_fonts/font = SubResource( 6 )
+text = "Hra Covid Attack"
+align = 1
+
+[node name="Label2" type="Label" parent="CenterContainer/VBoxContainer"]
+margin_top = 64.0
+margin_right = 547.0
+margin_bottom = 221.0
+custom_fonts/font = SubResource( 4 )
+text = "Cieľom hry je zabiť čo najviac pacientov s
+ koronavírusom.
+ Čas je 1 minúta a 30 sekúnd. 
+Na konci hry sa zobrazí vaše skóre."
+align = 1
+valign = 1
+
+[node name="Label3" type="Label" parent="CenterContainer/VBoxContainer"]
+margin_top = 225.0
+margin_right = 547.0
+margin_bottom = 262.0
+custom_fonts/font = SubResource( 7 )
+text = "Made by: Daniel Petrik"
+align = 1
+valign = 1
+
+[node name="Button" type="Button" parent="CenterContainer/VBoxContainer"]
+margin_top = 266.0
+margin_right = 547.0
+margin_bottom = 309.0
+custom_fonts/font = SubResource( 2 )
+text = "Back"
+
+[connection signal="pressed" from="CenterContainer/VBoxContainer/Button" to="CenterContainer" method="_on_Button_pressed"]
