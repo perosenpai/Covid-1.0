@@ -1,7 +1,7 @@
 # Covid 1.0
 COVID 1.0 is a 2D open-world video game created using TypeScript and the Godot game engine. In this game, players assume the role of a doctor in an expansive natural environment. The objective of the game is to administer vaccines to humans infected with a corona virus, with the goal of curing as many of them as possible before the time runs out.
 
-![](https://github.com/petrikgit/Covid-1.0/blob/main/covid-game.gif)
+![](https://github.com/petrikgit/Covid-1.0/blob/main/covid-1.0.gif)
 
 ## Gameplay
 
